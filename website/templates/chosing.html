@@ -1,0 +1,44 @@
+{% extends "index.html" %}
+
+<html lang="en" dir="ltr">
+<head>
+
+    {%block head%}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    {%endblock%}
+
+</head>
+<body>
+
+{%block name_tracker%}
+<a class="navbar-brand" href="{{url_for('main_page')}}">{{myname}}'s Tracker</a>
+{%endblock%}
+
+
+{%block mainbody%}
+
+<div class="w3-container w3-center w3-animate-opacity  w3-animate-bottom photos hover01 ">
+
+    <a href="https://www.mymarket.ge/ka/search/53/iyideba-Laptop-kompiuterebi/?CatID=53">
+        <img src="{{ url_for('static', filename='laptop.jpg') }}" alt="laptop"></a>
+
+    <a class="hover08">
+        <img src="{{ url_for('static', filename='smartphone.png') }}" alt="smartphone"></a>
+
+
+
+</div>
+{%endblock%}
+
+
+
+</body>
+</html>
